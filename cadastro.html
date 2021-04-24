@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-players</title>
+    <title>E Players</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
 
@@ -24,29 +24,50 @@
     </header>
 
     <main>
-        <section class="container_jogador">
+        <div class="container_titulo">
             <div class="cor">
-                <div class="container_texto">
-                    <h1>Cadastro de Jogador</h1>
-                </div>
+                <h1>Cadastro de Times</h1>
             </div>
-        </section>
-        <section class="container_cadastro">
-            <div class="caixa">
-                <div class="cadastrar">
-                    <div class="prencher">
-                        <h2>Nome da Equipe</h2>
-                        <label for=""></label><input type="" name="" size="40" placeholder="" />
-                    </div>
-                    <div>
-                        <h2>Emblema</h2>
-                        <input type="file" name="tFoto" id="cFoto" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
 
+        <div class="fundo_cadastro">
+            <div class="dados">
+                <div class="container_cadastro">
+                    <div class="prencher">
+                        <span>Nome da equipe</span>
+                        <label for="name_1"></label><input class="input" type="name" name="tEquipe"
+                            placeholder="Nome" />
+                    </div>
+                    <div class="prencher">
+                        <span>Emblema</span>
+                        <div>
+                            <label class="label" for="cFoto">Escolha uma imagem</label><input type="file" name="tFoto"
+                                id="cFoto" accept="image/*" style="opacity: 0;" />
+                        </div>
+                    </div>
+                    <button><span>Cadastrar</span></button>
+                </div>
+            </div>
+
+            <div class="times container">
+                <h2>Lista de Times</h2>
+                <table>
+                    <tr>
+                        <th>Nome da Equipe</th>
+                        <th>Emblema</th>
+                    </tr>
+                    <tr>
+                        <td>Keyd</td>
+                        <td><img src="./assets_/keyd.png" alt="keyd-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>Santos</td>
+                        <td><img src="./assets_/santos.png" alt="santos-logo"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container_footer container">
             <div class="container_links">
@@ -75,7 +96,7 @@
                 <span class="faça_parte">Faça parte do nosso clan, assine nossa newsletter</span>
                 <div class="cadastrar">
                     <label for="e-mail_1"></label><input type="e-mail" name="e-mail" size="40" placeholder="E-mail" />
-                    <a class="ba" href=""><span>Cadastrar</span></a>
+                    <a class="ba" href=""><span>Cadastrar</span></a> 
                 </div>
                 <div class="social">
                     <span class="segue">Siga nós em:</span>
@@ -86,7 +107,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
